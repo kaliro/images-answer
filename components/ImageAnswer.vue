@@ -61,7 +61,7 @@ export default {
       }
     },
     fullUrl(url) {
-      return require(`~/assets/images-answer/${url}`)
+      return require(`~/static/images/old_project/${url}`)
     },
   },
 }

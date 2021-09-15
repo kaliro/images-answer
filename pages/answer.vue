@@ -59,6 +59,7 @@ export default {
     },
     onSelectImage(data) {
       this.imageSelected = data
+      this.onSendImage()
     },
     onSendImage() {
       this.loading = true
