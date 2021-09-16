@@ -1,18 +1,87 @@
-[
-  {
-    "name": "Story 1",
-    "imagen": "1.png",
-    "text": "There were two Hooks going for a walk, they met Horsy who was going to the Beuty Salon. Conversation order: Hook > Horsy"
-  },
-  {
-    "name": "Story 2",
-    "imagen": "2.png",
-    "text": "On the way to the Beuty Salon Horsy asked Forky for direcction, but Forky was trying to make a prank on him. Conversation order: Horsy > Forky > Candle > Hook"
-  },
-  {
-    "name": "Story 3",
-    "imagen": "3.png",
-    "text": "Horsy came to the Beuty Salon, Blower was right behind him when he and glasess arrive to enter. Conversation order: Horsy > Hook > Glases > Blower"
-  }
-
-]
+{
+  "TimeSlider": 5000,
+  "Animation": "easy",
+  "ShowSpot": true,
+  "Stories": [
+    {
+      "imagen": "1.png",
+      "story": "There were two Hooks going for a walk, they met Horsy who was going to the Beuty Salon. Conversation order: Hook > Horsy",
+      "order": ""
+    },
+    {
+      "imagen": "2.png",
+      "story": "On the way to the Beuty Salon Horsy asked Forky for direcction, but Forky was trying to make a prank on him. Conversation order: Horsy > Forky > Candle > Hook",
+      "order": ""
+    },
+    {
+      "imagen": "3.png",
+      "story": "Horsy came to the Beuty Salon, Blower was right behind him when he and glasess arrive to enter. Conversation order: Horsy > Hook > Glases > Blower",
+      "order": ""
+    },
+    {
+      "imagen": "4.png",
+      "story": "Blower was drinking the coffee that Hooky brought him, and horsey’s hair was messed up so it fell into his coffee.",
+      "order": "Conversation order: Hook > Blower > Candle > Horse"
+    },
+    {
+      "imagen": "5.png",
+      "story": "Inside, Horse had to leave his horn to enter.",
+      "order": "Conversation order: Horse > Cannon > Hook > Horse"
+    },
+    {
+      "imagen": "6.png",
+      "story": "Horsy left the horn with Hook, who informed Blower that he got the horn.",
+      "order": "Conversation order: Hook > Boss Blower > Cannon"
+    },
+    {
+      "imagen": "7.png",
+      "story": "Glasses came in after waiting 10 minutes and Cannon welcomed him.",
+      "order": "Conversation order: Hook > Black Glasses > Blue Candle > Cannon"
+    },
+    {
+      "imagen": "8.png",
+      "story": "Inside Horse was afraid of Fork and jumped to the chair.",
+      "order": "Conversation order: Horse > Black Glasses > Hook > Fork"
+    },
+    {
+      "imagen": "9.png",
+      "story": "Fork attacked Blower (the boss) and the coffee fell to the ground.",
+      "order": "Conversation order: Fork > Boss Blower > Candle > Hook"
+    },
+    {
+      "imagen": "10.png",
+      "story": "Fork was trying to escape and Cannon tried to call the police but couldn›t so Candle pushed his flame higher to help.",
+      "order": "Conversation order: Fork > Cannon > Orange Candle > Black Glasses"
+    },
+    {
+      "imagen": "11.png",
+      "story": "Hook came quickly to light Cannon but needed a spark, so he asked Candle",
+      "order": "Conversation order: Hook > Cannon > Hook > Orange Candle"
+    },
+    {
+      "imagen": "12.png",
+      "story": "Cannon finally fired and threw a watermelon toward Fork to stop him.",
+      "order": "Conversation order: Hook > Fork > Cannon"
+    },
+    {
+      "imagen": "13.png",
+      "story": "Whistle arrived and Candle asked Glasses to tell Whistle what he saw.",
+      "order": "Conversation order: Whistle > Hook > Candle > Black Glasses"
+    },
+    {
+      "imagen": "14.png",
+      "story": "Glasses was explaining to Whistle what he saw while crying.",
+      "order": "Conversation order: Blue Whistle > Black Glasses > Hook >  Blower"
+    },
+    {
+      "imagen": "15.png",
+      "story": "Hook quickly came to the house to clean the warning sign So everyone knows that Fork is nearby",
+      "order": "Conversation order: Cleaners > Hook > Cleaner"
+    },
+    {
+      "imagen": "16.png",
+      "story": "Fork attacked Cleaner who had a little liquid to clean the sign, when Fork attacked him he got very angry and asked Candle to help him dry it.",
+      "order": "Conversation order: Fork > Cleaner > Cleaner > Candle 1"
+    }
+  ]
+}

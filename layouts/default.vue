@@ -82,11 +82,16 @@ export default {
           title: 'Story',
           to: '/story'
         },
+        {
+          icon: 'mdi-apps',
+          title: 'Test',
+          to: '/test'
+        },
       ],
       miniVariant: false,
       right: false,
       rightDrawer: false,
-      title: 'Issam test APP'
+      title: 'Issam APP'
     }
   }
 }

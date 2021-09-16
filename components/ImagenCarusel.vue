@@ -1,6 +1,12 @@
 <template>
   <div>
-    <slide :data="sliderImagesUrls" :spot="spot" :type="transitionMode" :time="sliderTime" @change="onChangeEvent" />
+    <slide
+      :data="sliderImagesUrls"
+      :spot="spot"
+      :type="transitionMode"
+      :time="sliderTime"
+      @change="onChangeEvent"
+    />
   </div>
 </template>
 
@@ -29,19 +35,14 @@ export default {
     },
     sliderTime: {
       type: Number,
-      default: -1,
-    }
+      default: 5000,
+    },
   },
   data() {
     return {
       sliderImagesUrls: [],
     }
   },
-  // computed: {
-  //   dataImagesLocal() {
-  //     return this.loadImagenUrl()|| []
-  //   },
-  // },
   beforeMount() {
     const allImagenUrl = this.loadImagenUrl()
     this.sliderImagesUrls = allImagenUrl
@@ -54,7 +55,7 @@ export default {
       this.$emit('onchangestory', index)
     },
     loadImagenUrl() {
-      const fullUrls = this.dataImages.map((x) => this.fullPathImage(x.imagen))
+      const fullUrls = this.dataImages.map((x) => this.fullPathImage(x))
       return fullUrls
     },
   },
