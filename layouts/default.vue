@@ -9,7 +9,7 @@
     >
       <v-list>
         <v-list-item
-          v-for="(item, i) in items"
+          v-for="(item, i) in menuItems"
           :key="i"
           :to="item.to"
           router
@@ -55,43 +55,31 @@
 </template>
 
 <script>
+import config from 'assets/config.json'
+
 export default {
   data () {
     return {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        },
-        {
-          icon: 'mdi-apps',
-          title: 'App',
-          to: '/answer'
-        },
-        {
-          icon: 'mdi-apps',
-          title: 'Story',
-          to: '/story'
-        },
-        {
-          icon: 'mdi-apps',
-          title: 'Test',
-          to: '/test'
-        },
-      ],
       miniVariant: false,
       right: false,
       rightDrawer: false,
-      title: 'Issam APP'
+      title: config.Title,
+      menuItems: []
+    }
+  },
+  beforeMount() {
+    this.menuItems = this.createMenu( [...config.Menu], [...config.Tests])
+  },
+  methods:{
+    createMenu(rawMenu,rawTest){
+      const menu = rawMenu
+      rawTest.forEach(i => {
+        menu.push({icon:i.icon, title: i.title,to:`/tests/${i.fileName}`})
+      });
+      return menu
     }
   }
 }
