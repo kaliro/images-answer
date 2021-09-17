@@ -11,7 +11,7 @@
       "title": "Story",
       "icon": "auto_stories",
       "to": "/story",
-      "color": "#1F7087",
+      "color": "#385F73",
       "description": "The best Story of the word.",
       "hidden": false
     }
@@ -23,6 +23,14 @@
       "fileName": "test1",
       "color": "#952175",
       "description": "Short Justification!!",
+      "hidden": false
+    },
+    {
+      "title": "Test #2",
+      "icon": "description",
+      "fileName": "test2",
+      "color": "#1F7087",
+      "description": "New Short Justification!!",
       "hidden": false
     }
   ]
