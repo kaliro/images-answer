@@ -13,7 +13,9 @@
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",
+    "@wyhaya/vue-slide": "^1.0.2",
     "core-js": "^3.15.1",
+    "material-design-icons-iconfont": "^6.1.0",
     "nuxt": "^2.15.7",
     "vuetify": "^2.5.5"
   },

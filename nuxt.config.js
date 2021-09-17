@@ -25,7 +25,8 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     // CSS file in the project
-    //'@/assets/images-anwser.css',
+    // '@/assets/images-anwser.css',
+    'material-design-icons-iconfont/dist/material-design-icons.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,7 +41,7 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/vuetify
-    '@nuxtjs/vuetify',
+    ['@nuxtjs/vuetify', { iconfont: 'md' }],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules

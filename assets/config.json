@@ -1,0 +1,37 @@
+{
+  "Title": "Issam Test APP",
+  "Menu": [
+    {
+      "title": "Home",
+      "icon": "home",
+      "to": "/",
+      "hidden": true
+    },
+    {
+      "title": "Story",
+      "icon": "auto_stories",
+      "to": "/story",
+      "color": "#385F73",
+      "description": "The best Story of the word.",
+      "hidden": false
+    }
+  ],
+  "Tests": [
+    {
+      "title": "Test #1",
+      "icon": "receipt_long",
+      "fileName": "test1",
+      "color": "#952175",
+      "description": "Short Justification!!",
+      "hidden": false
+    },
+    {
+      "title": "Test #2",
+      "icon": "description",
+      "fileName": "test2",
+      "color": "#1F7087",
+      "description": "New Short Justification!!",
+      "hidden": false
+    }
+  ]
+}

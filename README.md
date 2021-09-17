@@ -67,3 +67,7 @@ More information about the usage of this directory in [the documentation](https:
 This directory contains your Vuex store files. Creating a file in this directory automatically activates Vuex.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/store).
+
+### `Icons`
+
+If you know whats icons you can use is this [Material icons](https://fonts.google.com/icons?selected=Material+Icons).
