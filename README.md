@@ -1,5 +1,7 @@
 # imagen-answer
 
+you need install cordova and android studio
+
 ## Build Setup
 
 ```bash
@@ -9,12 +11,23 @@ $ npm install
 # serve with hot reload at localhost:3000
 $ npm run dev
 
-# build for production and launch server
+# build for production
 $ npm run build
-$ npm run start
+$ npm run generate
 
 # generate static project
 $ npm run generate
+
+# Add android Platform this is necesary for every develop machine
+$ cd cordova
+$ cordova platform add android
+
+# Build android APK (in base directory)
+$ npm run cordova-android
+
+# Install and run Emulator (you need start android emulator first)
+$ npm run run-android
+
 ```
 
 For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).

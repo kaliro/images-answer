@@ -25,7 +25,7 @@ import rawStory from 'assets/story.json'
 export default {
   data() {
     return {
-      imagenPath: '/images/story/',
+      imagenPath: 'images/story/',
       currentStory: [],
       allStory: rawStory.Stories,
       slideTime: rawStory.TimeSlider,

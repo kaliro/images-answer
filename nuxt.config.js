@@ -7,18 +7,27 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
+  generate: {
+    dir: 'dist', // public/ instead of dist/
+    subFolders: true // HTML files are generated according to the route path
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - imagen-answer',
     title: 'imagen-answer',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      // { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'initial-scale=1, width=device-width, height=device-height, viewport-fit=cover' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      // { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'cordova.js' }
     ]
   },
 
@@ -31,6 +40,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/cordova.client',
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -76,7 +86,12 @@ export default {
     }
   },
 
+  router: {
+    mode: 'hash'
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    publicPath: "assets"
   }
 }

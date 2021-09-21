@@ -49,7 +49,7 @@ export default {
     loadTests() {
       const rawTest = require('assets/tests/' + this.testName + '.json')
 
-      this.imagenPath = '/images/tests/' + rawTest.ImagesPath
+      this.imagenPath = 'images/tests/' + rawTest.ImagesPath
       this.allTestData = rawTest.Data
       this.answerImagens = rawTest.Data.map((x) => x.question)
       this.slideTime= rawTest.TimeSlider
