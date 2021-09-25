@@ -20,7 +20,7 @@ $ npm run generate
 
 # Add android Platform this is necesary for every develop machine
 $ cd cordova
-$ cordova platform add android
+$ cordova prepare #if this fail create www folder inside cordova
 
 # Build android APK (in base directory)
 $ npm run cordova-android
