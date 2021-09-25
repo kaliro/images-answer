@@ -11,9 +11,11 @@
     "lint": "npm run lint:js",
     "test": "jest",
     "cordova-android": "npm run generate && npm run replace-paths && npm run copy-cordova && npm run run-android",
+    "cordova-generate": "npm run generate && npm run replace-paths && npm run copy-cordova && npm run cordova-prepare",
     "replace-paths": "node clean-relative-path.js",
     "copy-cordova": "fse copy --errorOnExist --dereference --preserveTimestamps dist/ cordova/www/",
     "clear-cordova": "fse emptyDir cordova/www/",
+    "cordova-prepare": "cd cordova && cordova prepare",
     "run-android": "cd cordova && cordova run android"
   },
   "dependencies": {
